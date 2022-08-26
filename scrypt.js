@@ -67,12 +67,12 @@ $('.owl-carousel').owlCarousel({
 
  $('.owl-carousel').on('translate.owl.carousel', function(e) {
     var index = e.item.index;
-    $('.card').eq(index - 1).addClass('side');
-    $('.card').eq(index + 1).addClass('side');
-    $('.card').eq(index - 1).removeClass('main');
-    $('.card').eq(index + 1).removeClass('main');
-    $('.card').eq(index).removeClass('side');
-    $('.card').eq(index).addClass('main');
+    $('.card-alumni').eq(index - 1).addClass('side');
+    $('.card-alumni').eq(index + 1).addClass('side');
+    $('.card-alumni').eq(index - 1).removeClass('main');
+    $('.card-alumni').eq(index + 1).removeClass('main');
+    $('.card-alumni').eq(index).removeClass('side');
+    $('.card-alumni').eq(index).addClass('main');
   });
 
 
