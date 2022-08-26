@@ -205,6 +205,7 @@ nav{
     width: 100vw;
     display:grid;
     grid-template-columns: 50vw 50vw;
+    color: #fff;
     /* background-color: antiquewhite; */
 } 
 
@@ -255,7 +256,7 @@ iframe{
 }
 
 .gridBlock_1{
-    grid:none;
+    
     grid-template-columns: 50vw 50vw;
     margin: 0;
 }
@@ -263,6 +264,7 @@ iframe{
     grid:none;
     grid-template-columns: 33vw 33vw 33vw;
     margin: 0;
+    font-size: 0.8rem;
 }
 
 
@@ -326,7 +328,7 @@ iframe{
   
 
 
-  @media all and (max-width: 500px) {
+  @media all and (max-width: 600px) {
     .card-list {
       /* On small screens, we are no longer using row direction but column */
       flex-direction: column;
@@ -358,18 +360,27 @@ iframe{
     margin-right:20%;
     grid-template-columns: auto auto;
     padding: 5% 0;
-    padding-right: 10%;
-
-
-
-
-    
+    padding-right: 10%;    
 }
 
   h2{ font-size: 2rem;}
   h4{ font-size: 1rem; padding: 0%}
 
+@media(max-width:600px)
+{
+.research{
+    grid-template-columns: auto;
+    margin: auto;
+    padding: auto;
+}
 
+.research_1,.research_2{
+    width: 100vw;
+    margin: auto;
+    padding: 0;
+
+}
+}
 
   
   /*=====================  Footer ====================== */
@@ -384,7 +395,7 @@ footer {
   justify-content: center;
   background: #E9DAC1;
   color: #000;
-  padding: 1rem;
+  padding:  1rem 0;
   
   flex-direction: column;
   font-family: "Inter";
@@ -426,7 +437,7 @@ footer {
     flex-direction: column;
   }
   .bottom {
-    width: 90vw;
+    width: 80vw;
   }
 }
 
