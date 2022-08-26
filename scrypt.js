@@ -105,6 +105,28 @@ $(".batch")
 });
 
 
+// ================ Companies===================//
+$(".companies_visited").owlCarousel({
+  loop: true,
+  nav: false,
+  autoplay: true,
+  autoplayTimeout: 3000,
+  autoplayHoverPause: "true",
+  margin: 0,
+  dots: true,
+  center: true,
+  responsive: {
+    0: {
+      items: 1,
+    },
+    700: {
+      items: 1,
+    },
+    1100: {
+      items: 5,
+    },
+  },
+});
 
 // ================= Start up===================//
 
@@ -129,6 +151,26 @@ $(".owl-carousel_1").owlCarousel({
     },
   },
 });
+
+$(".owl-carousel_1").on("translate.owl.carousel", function (e) {
+  var index = e.item.index;
+  $(".startup-card ")
+    .eq(index - 1)
+    .addClass("side");
+  $(".startup-card ")
+    .eq(index + 1)
+    .addClass("side");
+  $(".startup-card ")
+    .eq(index - 1)
+    .removeClass("main");
+  $(".startup-card ")
+    .eq(index + 1)
+    .removeClass("main");
+  $(".startup-card ").eq(index).removeClass("side");
+  $(".startup-card ").eq(index).addClass("main");
+});
+
+
 
 // ================= Owl-Carousel===================//
 

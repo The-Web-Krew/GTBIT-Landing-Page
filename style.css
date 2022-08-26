@@ -13,7 +13,7 @@ section{
     text-align: center;
 }
 
-
+a{ text-decoration: none;}
 nav{
     height: 5rem;
     width: 100vw;
@@ -357,6 +357,9 @@ nav{
   }
 
 }
+/*===================== Notification and events======  */
+.events,.notice{ width:80%; margin:0 auto;}
+li{ text-align: left; padding: 10px;}
 
 
 /*=====================  Counter ====================== */
@@ -432,6 +435,88 @@ nav{
 
 
 }
+
+/*===================== Companies====================== */
+
+.companies {
+  position: relative;
+  text-align: center;
+  margin: 30px auto;
+  width: 125px;
+  height: 125px;
+  border-radius: 40px;
+box-shadow: 5px 5px 30px 7px rgba(0,0,0,0.25), -5px -5px 30px 7px rgba(0,0,0,0.22);
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.companies .companies_image {
+  width: inherit;
+  height: inherit;
+  border-radius: 40px;
+  object-fit: cover;
+ 
+}
+
+.companies .companies_image img{
+  width: inherit;
+  height: inherit;
+  border-radius: 40px;
+  object-fit: cover;
+}
+
+.image-avatar {
+  top: 10%;
+  left: 50%;
+  position: absolute;
+  width:auto;
+  transform: translate(-50%, -50%);
+  vertical-align: middle;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+}
+.startup-card_title {
+  text-align:center;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+
+  background-color:#fff;
+  border-radius: 0px 0px 40px 40px;
+   width: inherit;
+  height:210px;
+  font-size: 30px;
+}
+
+.startup-details{
+  padding:10px;
+  margin:20px 0;
+}
+p{font-size:20px;}
+
+p,h3{
+  padding:0px;
+  margin:0px
+}
+.startup-links{
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display:grid;
+  width:80%;
+  margin:auto;
+  grid-template-columns: auto auto auto;
+  gap:1fr;
+  
+}
+
+
+
+
+
 
 
 /*=====================  aboutDisplay ====================== */
@@ -586,6 +671,7 @@ p,h3{
   gap:1fr;
   
 }
+
 
 
 .title-white {
