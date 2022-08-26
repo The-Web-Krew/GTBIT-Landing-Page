@@ -13,6 +13,7 @@ section{
     text-align: center;
 }
 
+
 nav{
     height: 5rem;
     width: 100vw;
@@ -22,6 +23,8 @@ nav{
     display: flex;
     background-color: #E9DAC1;
     z-index: 10;
+    display: none;
+
 }
 
 /*Styling logo*/
@@ -148,8 +151,147 @@ nav{
     transform: rotate(45deg) translate(-5px,-6px);
 }
 
+
 /*===================== Main ====================== */
 
+.landing-container{
+  
+  position: relative;
+  text-align: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.landing-container img{
+  position: relative;
+  text-align: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.landing-text{
+  text-align: center;
+  align-items: center;
+  font-size: 2em;
+  color:#fff;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+
+.button {
+  padding: 1rem 2rem;
+  text-align: center;
+  font-size: 16px;
+  text-transform: uppercase;
+  cursor: pointer;
+  background: #fff;
+  border-radius: 53px;
+  border: 1px solid #e8e8e8;
+  color: #1e1b1b;
+  letter-spacing: 1px;
+  box-shadow: 0px 4px 16px rgba(154, 154, 154, 0.31);
+}
+/*=====================Proud moment================== */
+
+.owl-carousel-adj{
+  width:90vw;
+  margin: auto;
+}
+
+/* Card */
+
+
+.batch {
+  margin: 30px auto;
+  width: 250px;
+  height: 250px;
+  border-radius: 40px;
+  box-shadow: 5px 5px 30px 7px rgba(0,0,0,0.25), -5px -5px 30px 7px rgba(0,0,0,0.22);
+  cursor: pointer;
+  color: #fff;
+  transition: 200;
+}
+.avatar{
+  margin: 0%;
+  padding: 0%;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  width:auto;
+  transform: translate(-50%, -50%);
+  vertical-align: middle;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+.avatar img{
+  margin: 0%;
+  padding: 0%;
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  width:auto;
+  transform: translate(-50%, -50%);
+  vertical-align: middle;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.details_of_student {
+  color:#000;
+  margin: 0%;
+  padding: 0%;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  width:auto;
+  transform: translate(-50%, -50%);
+
+  text-align: center;
+  border-radius: 0px 0px 40px 40px;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 30px;
+  height: 40px;
+}
+
+.main{
+  transform: scale(1,1);
+  opacity: 1;
+}
+
+.fade_1{
+  transform: scale(0.75,0.75);
+  opacity: 0.75;
+}
+
+.fade_2{
+  transform: scale(0.5,0.5);
+  opacity: 0.5;
+}
+
+@media all and (max-width: 600px) {
+  
+
+  .card-alumni {
+  margin: 30px auto;
+  width: 250px;
+  height: 350px;
+  border-radius: 40px;
+  box-shadow: 5px 5px 30px 7px rgba(0,0,0,0.25), -5px -5px 30px 7px rgba(0,0,0,0.22);
+  cursor: pointer;
+  color: #fff;
+  transition: 200;
+}
+
+ 
+}
 
 /*===================== Aboutus ====================== */
 
@@ -266,6 +408,31 @@ nav{
   
   }}
   
+/*=====================  Admissiona and schollership ====================== */
+
+.admission_and_scholarships{
+  width:70vw;
+  margin:auto;
+  display: grid;
+  text-align: center;
+  grid-template-columns: auto auto ;
+  gap: 1rem;
+}
+
+
+
+
+@media(max-width:600px){
+  
+.admission_and_scholarships{
+  width:90vw;
+ 
+  grid-template-columns: auto ;
+}
+
+
+}
+
 
 /*=====================  aboutDisplay ====================== */
 
@@ -348,67 +515,87 @@ iframe{
 /*===================== Start-UP====================== */
 
 .startup-card {
-  font-family: sans-serif;
-  scroll-snap-align: start;
-  width: 518px;
-  height: 300px;
-  border-radius: 8px;
-  box-shadow: 1px 1px 4px 2px rgba(0, 0, 0, 0.03);
+  position: relative;
+  text-align: center;
+  margin: 30px auto;
+  width: 250px;
+  height: 350px;
+  border-radius: 40px;
+box-shadow: 5px 5px 30px 7px rgba(0,0,0,0.25), -5px -5px 30px 7px rgba(0,0,0,0.22);
+  cursor: pointer;
+  transition: 0.4s;
 }
 
-.startup-card .image {
-  position: relative;
+.startup-card .startup-card_image {
+  width: inherit;
+  height: 140px;
+ 
+}
+
+.startup-card .startup-card_image img {
   width: inherit;
   height: inherit;
+  border-radius: 40px 40px 0 0;
   object-fit: cover;
-  transition: all 0.3s ease;
 }
 
-.startup-card .image img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 8px;
-  transition: all 0.3s ease;
-}
-
-img:hover {
-  transform: scale(1.02);
-}
-
-.startup-content {
-  border-radius: 8px;
-  display: grid;
-  justify-items: center;
-  justify-content: center;
-  text-align: center;
+.image-avatar {
+  top: 10%;
+  left: 50%;
   position: absolute;
-  top: 8px;
-  left: 16px;
-  background-color: aliceblue;
-  width: 40%;
-  height: 94%;
-  margin: auto;
-  mix-blend-mode: screen;
+  width:auto;
+  transform: translate(-50%, -50%);
+  vertical-align: middle;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+}
+.startup-card_title {
+  text-align:center;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+
+  background-color:#fff;
+  border-radius: 0px 0px 40px 40px;
+   width: inherit;
+  height:210px;
+  font-size: 30px;
 }
 
-.startup-card .startup-content h2 {
-  text-transform: uppercase;
-  display: grid;
-  justify-items: center;
-  justify-content: center;
-  text-align: center;
-  font-size: 2.5rem;
-  padding: 50px 10px 0px 10px;
+.startup-details{
+  padding:10px;
+  margin:20px 0;
 }
-.startup-card .startup-content p {
-  padding: 0 10px;
-  margin-top: 10px;
-  font-size: 1rem;
+p{font-size:20px;}
+
+p,h3{
+  padding:0px;
+  margin:0px
+}
+.startup-links{
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display:grid;
+  width:80%;
+  margin:auto;
+  grid-template-columns: auto auto auto;
+  gap:1fr;
+  
+}
+
+
+.title-white {
   color: black;
 }
 
+
+
 /*=====================  Alumni ====================== */
+
 .owl-carousel-adj{
     width:70vw;
     margin: auto;
@@ -482,7 +669,6 @@ img:hover {
   
    
   }
-  /*=====================  Startup ====================== */
   /*=====================  Research ====================== */
   .research{
     display:grid;
