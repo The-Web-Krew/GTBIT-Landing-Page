@@ -362,6 +362,35 @@ nav{
 li{ text-align: left; padding: 10px;}
 
 
+/*===================== Director ====================  */
+.director{ 
+  width:70vw;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.director_image{
+  width:80%;
+  margin: auto;
+
+}
+
+.director_image img{
+  width:80%;
+  
+}
+
+@media(max-width:600px){
+.director{  
+  width:90vw;
+  grid-template-columns: auto;
+}
+
+
+}
+
+
 /*=====================  Counter ====================== */
 
 .highlights_of_gtbit{
