@@ -42,4 +42,37 @@ updateCounter();
 });
 
   
-// ================= Counter===================//
+// ================= Owl-Carousel===================//
+$('.owl-carousel').owlCarousel({
+    loop:true,
+    nav:false,
+    autoplay:true,
+    autoplayTimeout:5000,
+    autoplayHoverPause:'true',
+    margin:0,
+    dots:true,
+    center:true,
+    responsive:{
+        0:{
+            items:1
+        },
+        700:{
+            items:1
+        },
+        1100:{
+            items:3
+        }
+    }
+})
+
+ $('.owl-carousel').on('translate.owl.carousel', function(e) {
+    var index = e.item.index;
+    $('.card').eq(index - 1).addClass('side');
+    $('.card').eq(index + 1).addClass('side');
+    $('.card').eq(index - 1).removeClass('main');
+    $('.card').eq(index + 1).removeClass('main');
+    $('.card').eq(index).removeClass('side');
+    $('.card').eq(index).addClass('main');
+  });
+
+
