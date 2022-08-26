@@ -41,9 +41,47 @@ const updateCounter = () => {
 updateCounter();
 });
 
+// ================= Start up===================//
+
+$('.owl-carousel_1').owlCarousel({
+  loop:true,
+  nav:false,
+  autoplay:true,
+  autoplayTimeout:5000,
+  autoplayHoverPause:'true',
+  margin:0,
+  dots:true,
+  center:true,
+  responsive:{
+      0:{
+          items:1
+      },
+      700:{
+          items:1
+      },
+      1100:{
+          items:3
+      }
+  }
+})
+
+$('.owl-carousel').on('translate.owl.carousel', function(e) {
+  var index = e.item.index;
+  $('.card-alumni').eq(index - 1).addClass('side');
+  $('.card-alumni').eq(index + 1).addClass('side');
+  $('.card-alumni').eq(index - 1).removeClass('main');
+  $('.card-alumni').eq(index + 1).removeClass('main');
+  $('.card-alumni').eq(index).removeClass('side');
+  $('.card-alumni').eq(index).addClass('main');
+});
+
+
+
+
   
 // ================= Owl-Carousel===================//
-$('.owl-carousel').owlCarousel({
+
+$('.owl-carousel_2').owlCarousel({
     loop:true,
     nav:false,
     autoplay:true,
