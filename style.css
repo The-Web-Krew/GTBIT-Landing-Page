@@ -201,10 +201,17 @@ nav{
 
 
 @media(max-width:600px){
+  
+.aboutus{
+  width: 90vw;
+  margin: 7% auto;
+}
   .about-card{
     width: 80vw;
- 
     grid-template-columns: auto ;
+  }
+  .about-card-creation{
+    margin: 15%;
   }
 
 }
