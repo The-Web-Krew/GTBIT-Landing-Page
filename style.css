@@ -1,0 +1,331 @@
+
+body{
+    padding: 0%;
+    margin: 0%;
+    overflow-x: hidden;
+    background-color: #2B4865;
+    color:#fff;
+}
+
+nav{
+    height: 5rem;
+    width: 100vw;
+    margin: 0%;
+    padding: 0%;
+    top:0;
+    display: flex;
+    background-color: #002B5B;
+    z-index: 10;
+    color:#fff;
+
+}
+
+/*Styling logo*/
+.logo{
+    padding:1vh 1vw;
+    text-align: center;
+}
+.logo img {
+    height: 5rem;
+    width: 5rem;
+}
+
+/*Styling Links*/
+.nav-links{
+    display: flex;
+    justify-content: flex-end;
+    list-style: none; 
+    width: 90vw;
+    padding: 0 0.7vw;
+    align-items: center;
+    text-transform: uppercase;
+}
+.nav-links li a{
+    text-decoration: none;
+    margin: 0 0.7vw;
+}
+.nav-links li a:hover {
+    color: #256D85;
+}
+.nav-links li {
+    position: relative;
+}
+
+
+/*Styling Hamburger Icon*/
+.hamburger div{
+    width: 30px;
+    height:3px;
+    background: #fff;
+    margin: 5px;
+    transition: all 0.3s ease;
+}
+.hamburger{
+    display: none;
+}
+
+
+/*Stying for small screens*/
+@media screen and (max-width: 800px){
+    nav{
+        position: fixed;
+        z-index: 3;
+    }
+    .hamburger{
+        display:block;
+        position: absolute;
+        cursor: pointer;
+        right: 5%;
+        top: 50%;
+        transform: translate(-5%, -50%);
+        z-index: 2;
+        transition: all 0.7s ease;
+    }
+    .nav-links{
+
+        position: fixed;
+        background: #256D85;
+        height: 100vh;
+        width: 100%;
+        padding: 0%;
+        margin: 0;
+        flex-direction: column;
+        clip-path: circle(50px at 90% -20%);
+        -webkit-clip-path: circle(50px at 90% -10%);
+        transition: all 1s ease-out;
+        justify-content: space-evenly;
+
+        pointer-events: none;
+    }
+    .nav-links.open{
+        clip-path: circle(1000px at 90% -10%);
+        -webkit-clip-path: circle(1000px at 90% -10%);
+        pointer-events: all;
+    }
+    .nav-links li{
+        opacity: 0;
+    }
+    .nav-links li:nth-child(1){
+        transition: all 0.5s ease 0.2s;
+    }
+    .nav-links li:nth-child(2){
+        transition: all 0.5s ease 0.4s;
+    }
+    .nav-links li:nth-child(3){
+        transition: all 0.5s ease 0.6s;
+    }
+    .nav-links li:nth-child(4){
+        transition: all 0.5s ease 0.7s;
+    }
+    .nav-links li:nth-child(5){
+        transition: all 0.5s ease 0.8s;
+    }
+    .nav-links li:nth-child(6){
+        transition: all 0.5s ease 0.9s;
+        margin: 0;
+    }
+    .nav-links li:nth-child(7){
+        transition: all 0.5s ease 1s;
+        margin: 0;
+    }
+    li.fade{
+        opacity: 1;
+    }
+}
+/*Animating Hamburger Icon on Click*/
+.toggle .line1{
+    transform: rotate(-45deg) translate(-5px,6px);
+}
+.toggle .line2{
+    transition: all 0.7s ease;
+    width:0;
+}
+.toggle .line3{
+    transform: rotate(45deg) translate(-5px,-6px);
+}
+
+/*=====================  Counter ====================== */
+
+.highlights_of_gtbit{
+    text-align: center;
+
+}
+
+.counter-main-container{
+    display:grid;
+    grid-template-columns: auto auto auto auto;
+    margin:5% 10%;
+    
+  }
+  
+  .counter-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin: 30px 50px;
+  }
+  
+  .counter {
+    font-size: 60px;
+    margin-top: 10px;
+  }
+  
+  @media (max-width:1050px){
+    
+  .counter-main-container{
+    grid-template-columns: auto auto;
+    margin:7% 15%;
+    
+  }
+  
+  }
+  
+  @media (max-width: 700px) {
+    
+  .counter-main-container{
+    grid-template-columns: auto ;
+    margin:7% 15%;
+    
+  
+  }}
+  
+
+/*=====================  aboutDisplay ====================== */
+
+.aboutDisplay{
+    height: 70vh;
+    width: 100vw;
+    display:grid;
+    grid-template-columns: 50vw 50vw;
+    /* background-color: antiquewhite; */
+} 
+
+.gridBlock_1{
+    display: grid;
+    grid-template-columns: 25vw 25vw;
+    margin: 1rem;
+}
+
+.block_1{
+    object-fit: cover;
+    margin: 1rem;
+
+}
+iframe{
+    width: 100%;
+    height: 100%;
+}
+
+.gridBlock_2{
+    display: grid;
+    grid-template-columns: repeat(3, 33.33%);
+    background-image: url("    https://helpx.adobe.com/content/dam/help/en/photoshop/using/convert-color-image-black-white/jcr_content/main-pars/before_and_after/image-before/Landscape-Color.jpg");
+    margin: 2rem;
+
+}
+
+.block_2{    
+    text-align: center;
+    margin: 0.2rem;
+    background-color: #000;
+    opacity: 0.6;
+}
+
+.block_2:hover{
+    background-color:#2B4865;
+    transform: scale(1.05);
+    z-index: 10;
+}
+
+@media(max-width:600px){
+
+    
+.aboutDisplay{
+    margin: 7% 0;
+    height:auto;
+    grid-template-columns: auto;
+}
+
+.gridBlock_1{
+    grid:none;
+    grid-template-columns: 50vw 50vw;
+    margin: 0;
+}
+.gridBlock_2{
+    grid:none;
+    grid-template-columns: 33vw 33vw 33vw;
+    margin: 0;
+}
+
+
+    
+}
+
+
+
+
+/*=====================  Footer ====================== */
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;400&display=swap");
+
+footer {
+  margin-top: 8rem;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #2f2e41;
+  color: white;
+  padding: 1rem;
+  
+  flex-direction: column;
+  font-family: "Inter";
+  font-weight: 100;
+}
+.top {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.top div {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  padding: 1rem;
+}
+.top div h3 {
+  margin-bottom: 1rem;
+}
+.top div ul {
+    padding: 0;
+  list-style-type: none;
+}
+.top div ul li {
+  margin-block: 1rem;
+}
+.bottom {
+  width: 80%;
+  margin-top: 3rem;
+}
+
+@media screen and (max-width: 830px) {
+  .top {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .bottom {
+    width: 90vw;
+  }
+}
+
+
+
+
+
+
+
