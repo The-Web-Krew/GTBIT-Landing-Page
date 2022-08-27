@@ -182,8 +182,8 @@ nav{
 }
 
 
-
 .button {
+  width:80%;
   padding: 1rem 2rem;
   text-align: center;
   font-size: 16px;
@@ -194,8 +194,11 @@ nav{
   border: 1px solid #e8e8e8;
   color: #1e1b1b;
   letter-spacing: 1px;
-  box-shadow: 0px 4px 16px rgba(154, 154, 154, 0.31);
+  /* box-shadow: 0px 1px 4px rgba(154, 154, 154, 0.31); */
 }
+
+
+
 /*=====================Proud moment================== */
 
 .owl-carousel-adj{
@@ -211,7 +214,8 @@ nav{
   width: 250px;
   height: 250px;
   border-radius: 40px;
-  box-shadow: 5px 5px 30px 7px rgba(0,0,0,0.25), -5px -5px 30px 7px rgba(0,0,0,0.22);
+
+  box-shadow: 1px 1px 6px 1.4px rgba(0,0,0,0.25), -1px -1px 6px 1.4px rgba(0,0,0,0.22);
   cursor: pointer;
   color: #fff;
   transition: 200;
@@ -284,7 +288,7 @@ nav{
   width: 250px;
   height: 350px;
   border-radius: 40px;
-  box-shadow: 5px 5px 30px 7px rgba(0,0,0,0.25), -5px -5px 30px 7px rgba(0,0,0,0.22);
+  /* box-shadow: 5px 5px 30px 7px rgba(0,0,0,0.25), -5px -5px 30px 7px rgba(0,0,0,0.22); */
   cursor: pointer;
   color: #fff;
   transition: 200;
@@ -398,6 +402,11 @@ li{ text-align: left; padding: 10px;}
 
 }
 
+.highlight_svg{
+  margin: auto;
+  width:60px;
+  height: 60px;
+}
 .counter-main-container{
     display:grid;
     grid-template-columns: auto auto auto auto;
@@ -474,7 +483,7 @@ li{ text-align: left; padding: 10px;}
   width: 125px;
   height: 125px;
   border-radius: 40px;
-box-shadow: 5px 5px 30px 7px rgba(0,0,0,0.25), -5px -5px 30px 7px rgba(0,0,0,0.22);
+/* box-shadow: 5px 5px 30px 7px rgba(0,0,0,0.25), -5px -5px 30px 7px rgba(0,0,0,0.22); */
   cursor: pointer;
   transition: 0.4s;
 }
@@ -635,7 +644,7 @@ iframe{
   width: 250px;
   height: 350px;
   border-radius: 40px;
-box-shadow: 5px 5px 30px 7px rgba(0,0,0,0.25), -5px -5px 30px 7px rgba(0,0,0,0.22);
+/* box-shadow: 5px 5px 30px 7px rgba(0,0,0,0.25), -5px -5px 30px 7px rgba(0,0,0,0.22); */
   cursor: pointer;
   transition: 0.4s;
 }
@@ -724,7 +733,7 @@ p,h3{
     width: 250px;
     height: 350px;
     border-radius: 40px;
-    box-shadow: 5px 5px 30px 7px rgba(0,0,0,0.25), -5px -5px 30px 7px rgba(0,0,0,0.22);
+    /* box-shadow: 5px 5px 30px 7px rgba(0,0,0,0.25), -5px -5px 30px 7px rgba(0,0,0,0.22); */
     cursor: pointer;
     color: #fff;
     transition: 200;
@@ -776,7 +785,7 @@ p,h3{
     width: 250px;
     height: 350px;
     border-radius: 40px;
-    box-shadow: 5px 5px 30px 7px rgba(0,0,0,0.25), -5px -5px 30px 7px rgba(0,0,0,0.22);
+    /* box-shadow: 5px 5px 30px 7px rgba(0,0,0,0.25), -5px -5px 30px 7px rgba(0,0,0,0.22); */
     cursor: pointer;
     color: #fff;
     transition: 200;

@@ -55,9 +55,9 @@ $(".proud_moment").owlCarousel({
       items: 1,
     },
     700: {
-      items: 1,
+      items: 3,
     },
-    1100: {
+    1200: {
       items: 5,
     },
   },
@@ -120,7 +120,7 @@ $(".companies_visited").owlCarousel({
       items: 1,
     },
     700: {
-      items: 1,
+      items: 3,
     },
     1100: {
       items: 5,
