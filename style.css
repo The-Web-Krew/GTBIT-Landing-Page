@@ -10,7 +10,7 @@ body{
     margin: 0%;
     overflow-x: hidden;
     background-color: #F7ECDE;
-    color:#000;
+    color:#fff;
 }
 section{
     margin:12% 0;
@@ -42,6 +42,7 @@ nav{
 }
 
 h1{
+  font-weight: 600;
   text-transform: uppercase;
   font-size:2.5rem;
 }
@@ -237,6 +238,7 @@ h1{
   border-radius: 40px;
   box-shadow: 1px 1px 6px 1.4px rgba(0,0,0,0.25), -1px -1px 6px 1.4px rgba(0,0,0,0.22);
   cursor: pointer;
+  background-color: #fff;
   color: #fff;
   transition: 200;
 }
@@ -622,7 +624,14 @@ iframe{
     text-align: center;
     margin: 0.2rem;
     background-color: #000;
+    font-size: 1rem;
     opacity: 0.6;
+}
+
+.block_2 h1{    
+  
+  font-size: 2rem;
+
 }
 
 .block_2:hover{
@@ -669,6 +678,7 @@ iframe{
   width:300px;
   height: 400px;
   border-radius: 40px;
+  color:#000;
 /* box-shadow: 5px 5px 30px 7px rgba(0,0,0,0.25), -5px -5px 30px 7px rgba(0,0,0,0.22); */
   cursor: pointer;
   transition: 0.4s;
@@ -971,6 +981,32 @@ footer {
 
 
 
+.first_section{
+  padding: 3% 0;
+  margin: 0;
+  background: url("./first_section.jpg");
+
+}
+
+.second_section{
+  padding: 3% 0;
+  margin: 0%;
+  background: url("./second_section.jpg");
+
+}
+
+.third_section{
+  padding: 3% 0;
+  margin: 0%;
+  background: url("./third_section.jpg");
+
+  
+}
+
+.forth_section{
+  padding: 3%;
+  margin: 0%;
+}
 
 
 
