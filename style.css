@@ -615,17 +615,32 @@ iframe{
 .gridBlock_2{
     display: grid;
     grid-template-columns: repeat(3, 33.33%);
-    background-image: url("https://helpx.adobe.com/content/dam/help/en/photoshop/using/convert-color-image-black-white/jcr_content/main-pars/before_and_after/image-before/Landscape-Color.jpg");
+    /* background-image: url("https://helpx.adobe.com/content/dam/help/en/photoshop/using/convert-color-image-black-white/jcr_content/main-pars/before_and_after/image-before/Landscape-Color.jpg"); */
     margin: 3rem;
 
+}
+.block_2_img{    
+  width: 100%;
+  margin: auto;
+}
+.block_2_img img{    
+  width: 250px;
+  height: 150px;
+  margin: 0.2rem;
+}
+.block_2_text{    
+  text-align: center;
+  top: 190;
+  color:#000;
+  margin: 0.2rem;
+  font-size: 1.2rem;
 }
 
 .block_2{    
     text-align: center;
     margin: 0.2rem;
-    background-color: #000;
+    background-color: rgb(255, 255, 255, 0.6);
     font-size: 1rem;
-    opacity: 0.6;
 }
 
 .block_2 h1{    
@@ -635,7 +650,6 @@ iframe{
 }
 
 .block_2:hover{
-    background-color:#2B4865;
     transform: scale(1.05);
     z-index: 10;
 }
