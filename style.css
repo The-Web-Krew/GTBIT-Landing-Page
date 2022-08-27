@@ -3,7 +3,9 @@
     font-family: 'Poppins', sans-serif;
 
 }
+
 body{
+
     padding: 0%;
     margin: 0%;
     overflow-x: hidden;
@@ -40,15 +42,10 @@ nav{
 }
 
 h1{
-  font-size:3rem;
+  text-transform: uppercase;
+  font-size:2.5rem;
 }
-@media(max-width:750px){ h1{ font-size: 2rem;}
-img{ object-fit: cover;}
-div{ margin:1% 0;}
-section{
-  margin: 15% 0;
-}
-}
+
 
 /*Styling Links*/
 .nav-links{
@@ -275,14 +272,13 @@ section{
   position: absolute;
   top: 60%;
   left: 50%;
-  width:auto;
+  width: 80%;
   transform: translate(-50%, -50%);
-
   text-align: center;
   border-radius: 0px 0px 40px 40px;
   font-family: sans-serif;
   font-weight: bold;
-  font-size: 30px;
+  font-size: 16px;
   height: 40px;
 }
 
@@ -745,7 +741,19 @@ p,h3{
   color: black;
 }
 
+@media(max-width:600px){
+  
+.startup-card {
+  width:250px;
+  height: 350px;
+  border-radius: 40px;
+}
 
+.startup-card .startup-card_image {
+  height: 150px;
+ 
+}
+}
 
 /*=====================  Alumni ====================== */
 
@@ -966,3 +974,16 @@ footer {
 
 
 
+
+@media(max-width:750px){ h1{ font-size: 2rem;}
+img{ object-fit: cover;}
+div{ margin:1% 0;}
+section{
+  margin: 15% 0;
+}
+.button{
+  display: inline-grid;
+    font-size: 12px;
+    padding: 0%;
+}
+}
