@@ -42,12 +42,14 @@ counters.forEach((counter) => {
 // ================= proud_moment ==================//
 
 $(".proud_moment").owlCarousel({
+  
   loop: true,
   nav: false,
   autoplay: true,
   autoplayTimeout: 5000,
   autoplayHoverPause: "true",
-  dots: true,
+
+
   center: true,
   responsive: {
     0: {
