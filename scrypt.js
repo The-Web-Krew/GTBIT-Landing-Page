@@ -53,7 +53,7 @@ $(".proud_moment").owlCarousel({
     0: {
       items: 1,
     },
-    700: {
+    1000: {
       items: 3,
     },
     1500: {

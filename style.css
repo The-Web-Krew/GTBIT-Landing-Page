@@ -37,6 +37,16 @@ nav{
     width: 5rem;
 }
 
+h1{
+  font-size:3rem;
+}
+@media(max-width:750px){ h1{ font-size: 2rem;}
+div{ margin:1% 0;}
+section{
+  margin: 15% 0;
+}
+}
+
 /*Styling Links*/
 .nav-links{
     display: flex;
@@ -330,7 +340,7 @@ nav{
 }
 
 .about-card-creation {
-  margin: 0  8rem ;
+  margin: 0  4rem ;
   width: 200px;
   height: fit-content;
   display: flex;
@@ -354,9 +364,16 @@ nav{
   font-size: 14px;
 
 }
+@media(max-width:750px){
+  
+.about-card-creation {
+  margin: 0  1rem ;
 
+}
 
-@media(max-width:600px){
+}
+
+@media(max-width:750px){
   
 .aboutus{
   width: 90vw;
@@ -395,7 +412,7 @@ li{ text-align: left; padding: 10px;}
   
 }
 
-@media(max-width:600px){
+@media(max-width:750px){
 .director{  
   width:90vw;
   grid-template-columns: auto;
@@ -473,7 +490,7 @@ li{ text-align: left; padding: 10px;}
 
 
 
-@media(max-width:600px){
+@media(max-width:750px){
   
 .admission_and_scholarships{
   width:90vw;
@@ -616,7 +633,7 @@ iframe{
     z-index: 10;
 }
 
-@media(max-width:600px){
+@media(max-width:750px){
 
     
 .aboutDisplay{
