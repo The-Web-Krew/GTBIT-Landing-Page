@@ -47,7 +47,6 @@ $(".proud_moment").owlCarousel({
   autoplay: true,
   autoplayTimeout: 5000,
   autoplayHoverPause: "true",
-  margin: 0,
   dots: true,
   center: true,
   responsive: {
@@ -57,7 +56,7 @@ $(".proud_moment").owlCarousel({
     700: {
       items: 3,
     },
-    1200: {
+    1500: {
       items: 5,
     },
   },
