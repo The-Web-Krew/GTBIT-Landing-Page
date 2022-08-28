@@ -525,6 +525,7 @@ p{ }
 
 /*===================== Companies====================== */
 
+
 .companies {
   position: relative;
   text-align: center;
@@ -609,7 +610,7 @@ p,h3{
 /*=====================  aboutDisplay ====================== */
 
 .aboutDisplay{
-    height: 70vh;
+    height: auto;
     width: 70vw;
     margin: auto;
     display:grid;
@@ -641,14 +642,17 @@ iframe{
     margin: 3rem;
 
 }
+
 .block_2_img{    
   width: 100%;
   top: 10%;
+  object-fit:fill;
   margin: auto;
 }
 .block_2_img img{   
   width: 250px;
   height: 180px;
+  object-fit: fill;
   margin: 0.8rem;
 }
 .block_2_text{    
@@ -698,10 +702,20 @@ iframe{
     font-size: 0.8rem;
 }
 .block_2{
-    height: 20vh;
 
 }
 
+
+/* .block_2_img{    
+  width: 100%;
+  top: 10%;
+  margin: auto;
+} */
+.block_2_img img{   
+  width: 125px;
+  height: 90px;
+  margin: 4% auto;
+}
     
 }
 
@@ -844,7 +858,7 @@ p,h3{
     left: 50%;
     transform: translate(-50%, -50%);
     position: absolute;
-  
+  color:#000;
     background-color:rgb(255, 255, 255);
     border-radius: 0px 0px 20px 20px;
      width: inherit;
@@ -1056,6 +1070,9 @@ footer {
 
 
 .main-heading-styling{
+  width:90%;
+  text-align: center;
+  margin: auto;
   font-size: 3.5rem;
 }
 
