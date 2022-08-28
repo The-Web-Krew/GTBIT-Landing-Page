@@ -650,8 +650,8 @@ iframe{
   margin: auto;
 }
 .block_2_img img{   
-  width: 250px;
-  height: 180px;
+  width: 200px;
+  height: 125px;
   object-fit: fill;
   margin: 0.8rem;
 }
@@ -1039,6 +1039,70 @@ footer {
 
 
 
+/* FAQ */
+.faq_background{
+  background-image: url("./faq.jpg") ;
+  padding: 5% ;
+  margin: 0%;
+}
+
+.faq{ width:65%;  color:#000; margin: auto;}
+
+.information_faq{
+  width:85%;  
+  margin: auto;
+}
+
+
+
+h3{ font-size: 28px;}
+
+
+li{ width:100%; text-align: left; padding: 10px; color:#000;}
+p{ }
+
+.faq_answers{color:#000;  }
+
+
+.collapsible_faq {
+  background-color: #777;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 24px;
+}
+
+.active_faq, .collapsible_faq:hover {
+  background-color: #555;
+}
+
+.collapsible_faq:after {
+  content: '\002B';
+  color: white;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active_faq:after {
+  content: "\2212";
+}
+
+.content_faq {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: #f1f1f1;
+  text-align: left;
+
+}
+
+
 .first_section{
   padding: 3% 0;
   margin: 0;
@@ -1087,4 +1151,11 @@ section{
     font-size: 12px;
     padding: 0%;
 }
+.faq{ width:90%; margin: auto;}
+
+.information_faq{
+  width:90%;  
+  margin: auto;
+}
+
 }

@@ -214,3 +214,20 @@ $(".owl-carousel").on("translate.owl.carousel", function (e) {
   $(".card-alumni").eq(index).removeClass("side");
   $(".card-alumni").eq(index).addClass("main");
 });
+// FAQ
+
+
+var coll = document.getElementsByClassName("collapsible_faq");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active_faq");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    } 
+  });
+}
