@@ -983,7 +983,6 @@ p,h3{
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;400&display=swap");
 
 footer {
-  margin-top: 8rem;
   width: 100vw;
   display: flex;
   align-items: center;
@@ -1140,12 +1139,13 @@ p{ }
   font-size: 3.5rem;
 }
 
-@media(max-width:750px){ h1{ font-size: 2rem;}
+@media(max-width:750px){ h1{ font-size: 2rem; }
 img{ object-fit: cover;}
 div{ margin:1% 0;}
 section{
   margin: 15% 0;
 }
+p{ width:95%;}
 .button{
   display: inline-grid;
     font-size: 12px;
